@@ -4,7 +4,7 @@
   "description": "Node Server Testing Challenge",
   "main": "server.js",
   "scripts": {
-    "test": "env DB_ENV=testing jest --watch",
+    "test": "cross-env DB_ENV=testing jest --watchAll",
     "server": "nodemon",
     "start": "node"
   },
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
